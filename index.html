@@ -413,7 +413,7 @@ class="w-full p-3 bg-gray-400 rounded-2xl text-white font-bold"
 
 </section>
 <!-- clickIt footer here -->
-<footer class="bg-gray-50 border-t border-gray-200">
+<footer class="bg-gray-50 border-t border-gray-200 relative">
   <div class="max-w-7xl mx-auto px-4 py-12">
 
     <!-- Top Grid -->
@@ -491,20 +491,51 @@ class="w-full p-3 bg-gray-400 rounded-2xl text-white font-bold"
         </div>
       </div>
 
+      <!-- Google Translate -->
+      <div class="col-span-2 md:col-span-1 mt-6 md:mt-0">
+        <h3 class="font-semibold text-gray-900 mb-3">Google Translate</h3>
+       <div id="google_translate_element"></div>
+      </div>
+
     </div>
 
     <!-- Divider -->
     <div class="border-t border-gray-200 mt-10 pt-6">
-
       <!-- Bottom Bar -->
       <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 gap-3">
         <p>© 2025 clickIT. All rights reserved.</p>
         <p>Made with ❤️ in India</p>
       </div>
-
     </div>
   </div>
+
+  <!-- Fixed WhatsApp Button -->
+  <a href="https://wa.me/+919998003879" target="_blank" class="fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg animate-bounce z-50 hover:bg-green-700">
+    <i class="bi bi-whatsapp text-xl text-white"></i>
+  </a>
+
 </footer>
+
+<!-- Google Translate Script -->
+  <!-- Google Translate script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {
+                    pageLanguage: 'en',         // source language
+                    includedLanguages: '',       // empty = all languages
+                    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+                },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script
+        type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
 
 <!-- clickIt login modal  -->
 <el-dialog> 
